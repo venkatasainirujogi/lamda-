@@ -8,8 +8,8 @@ logs_client = boto3.client('logs')
 s3_client = boto3.client('s3')
 
 # Constants
-S3_BUCKET_NAME = 'ddeddddeddeedd44'
-LOG_GROUP = 'RDSOSMetrics'
+S3_BUCKET_NAME = 'ddeddddeddeedd44'  #change the S3 bucketname here
+LOG_GROUP = 'RDSOSMetrics'  # change the log group name
 TIME_WINDOW_HOURS = 24  # Change to 12, 48, etc. if needed
 
 def lambda_handler(event, context):
